@@ -1,0 +1,23 @@
+[project]
+name = "k8s-rag"
+version = "0.1.0"
+description = "Kubernetes support-assistant RAG over official docs (LangChain + Chroma)"
+requires-python = ">=3.11"
+dependencies = [
+  "langchain>=0.3",
+  "langchain-community>=0.3",
+  "langchain-chroma>=0.1",
+  "langchain-text-splitters>=0.3",
+  "langchain-openai>=0.2",
+  "chromadb>=0.5",
+  "python-dotenv>=1.0",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "pydantic>=2.7",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100

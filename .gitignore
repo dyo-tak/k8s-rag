@@ -1,0 +1,9 @@
+data/
+.env
+.venv/
+__pycache__/
+chroma_db/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+eval/
